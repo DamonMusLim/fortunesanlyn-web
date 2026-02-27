@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FortuneSanlyn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <style>
+      :root{--bg:#0b1020;--card:#0f1633;--text:#e7e7ef;--muted:#a7b0c9;--primary:#5b8bff;}
+      body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+      .wrap{max-width:1100px;margin:0 auto;padding:32px 18px;}
+      .top{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+      .brand{display:flex;flex-direction:column;gap:6px;}
+      .brand h1{margin:0;font-size:28px;letter-spacing:0.4px;}
+      .brand p{margin:0;color:var(--muted);}
+      .nav{display:flex;gap:10px;flex-wrap:wrap;}
+      .nav a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,0.02);} 
+      .hero{margin-top:26px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:18px;align-items:start;}
+      .card{background:linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.03));border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:18px;}
+      .card h2{margin:0 0 10px 0;font-size:22px;}
+      .card p{margin:0 0 14px 0;color:var(--muted);line-height:1.6;}
+      .grid3{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+      .mini h3{margin:10px 0 6px 0;font-size:16px;}
+      .mini p{margin:0;color:var(--muted);line-height:1.5;}
+      footer{margin-top:30px;color:var(--muted);}
+      @media (max-width:780px){
+        .hero{grid-template-columns:1fr;}
+        .grid3{grid-template-columns:1fr;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <div class="brand">
+          <h1>FortuneSanlyn</h1>
+          <p>Group portal template — clean sites, independent domains, one codebase.</p>
+        </div>
+        <nav class="nav">
+          <a href="#businesses">Businesses</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="hero">
+        <section class="card">
+          <h2>What you get</h2>
+          <p>
+            A static site template ready for Vercel (or any static hosting), designed for multi-company branding.
+            Use <strong>SITE_KEY</strong> to switch logos/content per domain.
+          </p>
+          <div class="grid3">
+            <div class="mini">
+              <h3>Clean</h3>
+              <p>Each domain stays focused on one business line.</p>
+            </div>
+            <div class="mini">
+              <h3>Fast</h3>
+              <p>Static output, CDN-friendly, minimal dependencies.</p>
+            </div>
+            <div class="mini">
+              <h3>Practical</h3>
+              <p>Ready to pull content from your Jiandaoyun (JSON export).</p>
+            </div>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h2>Next steps</h2>
+          <p>
+            1) Add your <strong>static/</strong> folder per site<br/>
+            2) Add a small <strong>config.js</strong><br/>
+            3) Configure Vercel projects & Deploy Hooks
+          </p>
+        </aside>
+      </main>
+
+      <footer id="contact">v0 scaffold — ready for business sites.</footer>
+    </div>
+  </body>
+</html>
